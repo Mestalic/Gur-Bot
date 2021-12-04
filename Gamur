@@ -1,6 +1,6 @@
 if not _G.thingtosay then _G.thingtosay = "gg/A2HuXbCnBY | Join this server for cool hakker stuff bro!! Birth of a nation lives on! charlie and hulio and feens says hello" end
 if not _G.shoption then _G.shoption = "largest" end
-wait(5) if not game:IsLoaded() then game.Loaded:Wait() end
+wait(0.1) if not game:IsLoaded() then game.Loaded:Wait() end
 
 local lp = game.Players.LocalPlayer
 repeat wait() until lp and lp.Character and lp.Character:FindFirstChild("HumanoidRootPart")
@@ -55,7 +55,7 @@ coroutine.resume(coroutine.create(function()
                         spawn(function() pcall(function()
                         lp.Character:FindFirstChild("HumanoidRootPart").CFrame = z.Character:FindFirstChild("HumanoidRootPart").CFrame; wait(0.5); lp.Character:FindFirstChild("HumanoidRootPart").CFrame = z.Character:FindFirstChild("HumanoidRootPart").CFrame
                         end) end)
-                        wait(1.5)
+                        wait(0.5)
                     end
                 end
             end
@@ -67,7 +67,7 @@ coroutine.resume(coroutine.create(function()
         for _,z in next, game.Players:GetPlayers() do
             if z~=lp then
                 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w " .. z.Name .. " " .. _G.thingtosay,"All")
-                wait(3.8)
+                wait(1.1)
             end
         end
     end
