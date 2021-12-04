@@ -1,6 +1,6 @@
 if not _G.thingtosay then _G.thingtosay = "gg/A2HuXbCnBY | Join this server for cool hakker stuff bro!! Birth of a nation lives on! charlie and hulio and feens says hello" end
 if not _G.shoption then _G.shoption = "largest" end
-wait(0.1) if not game:IsLoaded() then game.Loaded:Wait() end
+wait(3) if not game:IsLoaded() then game.Loaded:Wait() end
 
 local lp = game.Players.LocalPlayer
 repeat wait() until lp and lp.Character and lp.Character:FindFirstChild("HumanoidRootPart")
